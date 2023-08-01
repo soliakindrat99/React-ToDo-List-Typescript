@@ -37,7 +37,7 @@ const ToDo = (props: any) => {
         selected={filteredPriority}
         onChangeFilter={filterChangeHandler}
       />
-      <List>
+      <List  className="tasksList">
         {filteredTasks &&
           filteredTasks.map((task: any) => {
             return (
@@ -48,7 +48,7 @@ const ToDo = (props: any) => {
                 >
                   {task.priority}
                 </ListItemText>
-                <ListItemText>
+                <ListItemText  className="taskCol">
                   {task.title} {task.description}
                 </ListItemText>
                 <IconButton title="Edit" onClick={() => editTaskHandler(task)}>

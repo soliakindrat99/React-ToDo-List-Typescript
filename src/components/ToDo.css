@@ -1,17 +1,38 @@
+.tasksList {
+  list-style: none;
+  padding: 0;
+}
+
 .taskBg {
-    background-color: #555;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    padding: 10px 140px 10px 15px;
-    text-align: left;
-    font-size: 22px;
-    position: relative;
+  background-color: #555;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.taskBg .priorityCol {
-    max-width: 70px;
+.priorityCol {
+  flex: 3;
+  font-weight: bold;
+  padding-right: 10px;
+  width: max-content;
+  max-width: 70px;
 }
 
-.taskBg .onlinedIcon {
-    color: #fff;
+.taskBg .taskCol {
+  flex: 1;
+  overflow-wrap: break-word;
+}
+
+.onlinedIcon {
+  color: #fff;
+}
+
+.onlinedIcon:hover {
+  color: #8ae2b9e2;
+  cursor: pointer;
 }
