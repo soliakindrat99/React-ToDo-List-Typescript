@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
+    'plugin:react/jsx-runtime',
   ],
   overrides: [
     {
@@ -31,8 +32,8 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react', 'prettier'],
   rules: {
     'import/extensions': 0,
-    'import/no-absolute-path': 0,
-    'react/react-in-jsx-scope': 0,
-    'react/button-has-type': 0,
+    'prettier/prettier': 'error',
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off',
   },
 };

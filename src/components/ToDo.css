@@ -1,0 +1,17 @@
+.taskBg {
+    background-color: #555;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px 140px 10px 15px;
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+}
+
+.taskBg .priorityCol {
+    max-width: 70px;
+}
+
+.taskBg .onlinedIcon {
+    color: #fff;
+}
